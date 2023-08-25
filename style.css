@@ -1,0 +1,851 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Public+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-sarif;
+}
+#header {
+  height: 743px;
+  width: 100%;
+  background-image: url(img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 20px 50px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.left a {
+  font-size: 35px;
+  color: aliceblue;
+  text-decoration: none;
+}
+.right ul li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.right ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+.right ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background: rgb(222, 222, 228);
+  transition: 0.5s;
+}
+.right ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 20%;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.header-text {
+  color: white;
+  font-size: 40px;
+}
+span .element {
+  color: white;
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+#about {
+  height: 900px;
+  width: 100%;
+}
+
+.skill-head,
+.title {
+  text-align: center;
+  padding: 30px;
+  margin: 5px;
+  position: relative;
+}
+.skill-head::after,
+.title::after {
+  content: "";
+  height: 3px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(36, 199, 193);
+}
+
+.skill-head h1 {
+  font-size: 50px;
+}
+.skill-head p {
+  font-size: 15px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+.skill-box1 {
+  width: 100%;
+  text-align: center;
+}
+.class {
+  margin: 50px 100px;
+}
+
+.skill-box1 .skill-title {
+  text-align: center;
+  margin: 30px;
+  padding: 15px;
+  display: inline-block;
+  width: 15%;
+  border: 2px solid rgb(230, 228, 228);
+  border-radius: 17px;
+  box-shadow: 2px 2px 3px  rgb(104, 81, 81);
+}
+.image {
+  width: 100%;
+}
+.image img {
+  width: 135px;
+  height: 140px;
+}
+.skill-title:hover {
+  background-color: rgb(248, 215, 255);
+  box-shadow: 0px 5px 14px 2px #ccc;
+  border: 1.5px solid transparent;
+}
+
+.skill-title div h1 {
+  font-size: 1.1rem;
+  margin: 5px;
+}
+
+#middle {
+  height: 700px;
+  width: 100%;
+  font-family: 'popins', sans-serif;
+}
+#middle .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 10%;
+}
+
+.education .title,
+.experience .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  padding: 0 0 40px 30px;
+  text-align: center;
+}
+.title h1 {
+  margin-bottom: 20px;
+}
+
+.education .contents {
+  padding: 0px 30px;
+  border-left: 2px solid black;
+  margin-top: 20px;
+}
+
+.contents .box {
+  padding: 23px;
+  position: relative;
+  border: 1.5px solid rgb(240, 235, 244);
+  background-color: rgb(241, 198, 241);
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.contents .box:hover {
+  box-shadow: 0px 5px 14px 2px #ccc;
+  border: 1.5px solid transparent;
+}
+.contents .box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: blueviolet;
+  border: 2px solid white;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    background-color: rgb(60, 221, 194);
+  }
+}
+
+.box h4 {
+  font-size: 15px;
+  font-family: Helvetica;
+  color: #444;
+  line-height: 1.3;
+}
+.box h2 {
+  padding-bottom: 6px;
+}
+
+/*Experience start here*/
+#experience {
+  height: 800px;
+  width: 100%;
+}
+.row {
+    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 12px;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  border-radius: 30px;
+  padding:40px  10px;
+  background-color: white;
+  height: 450px;
+  width: 100%;
+  border-top: 2px solid rgb(240, 240, 240);
+  margin: 20px 30px;
+  box-shadow: 2px 4px 3px 1px rgb(107, 80, 80);
+   
+}
+
+
+
+.col:hover {
+  background-color: rgb(132, 178, 253);
+}
+/*
+#titleid::after {
+  background: #f490f0;
+}*/
+.col-head h2 {
+  font-size: 1.5rem;
+}
+
+.col img {
+  width: 16%;
+  float: left;
+  margin: 2px -30px 0px 20px;
+}
+
+.col .boxmodel {
+  padding: 4px;
+  margin: 10px;
+  margin-top: 50px;
+}
+.col .boxmodel p {
+  padding: 5px;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 250 px;
+}
+.col .boxmodel p i {
+  padding: 0px 8px;
+}
+
+.row .col .language {
+  margin: 5px 5px 0px;
+  padding: 5px 0px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.row .col .language p {
+  margin: 10px 10px 0px 0px;
+  padding: 6px;
+  color: white;
+  border: 1px solid rgb(84, 84, 84);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(117, 117, 118);
+}
+.url a:hover {
+  color: white;
+}
+.url:hover {
+  background-color: #5ddef2;
+}
+
+.url {
+  display: flex;
+  display: inline-block;
+  margin-top: 55px;
+  padding: 5px;
+  font-weight: bold;
+  color: aliceblue;
+  background-color: rgb(92, 96, 212);
+  width: 45%;
+  height: 38px;
+  border: 2px solid rgb(97, 14, 174);
+  border-radius: 13px;
+}
+.url a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.container .col:hover {
+  box-shadow: 0px 5px 14px 2px #ccc;
+  border: 1.5px solid transparent;
+}
+
+/*Projects part start here*/
+#project {
+  width: 100%;
+  height: 998px;
+  background-color: aliceblue;
+}
+
+.tabtitles {
+  display: flex;
+  margin: 40px 30%;
+}
+.tabtitles .tablinks {
+  font-weight: 500;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  margin: 15px;
+  font-size: 1.5rem;
+  color: black;
+  padding: 5px;
+  height: 41px;
+  width: 100%;
+  background-color: #5ae353;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.tablinks:hover {
+  box-shadow: 1px 2px   #c6a5a5;
+  border: 1.5px solid transparent;
+}
+
+.tabcontents {
+  display: none;
+}
+.tabcontents.active-tab {
+  display: block;
+}
+
+.projectlist {
+  /*  width: 100%;*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 10px;
+  padding: 2px;
+  align-items: center;
+}
+.projectlist .work {
+  /*height: 570px;
+  width: 26%;
+  border: 1px solid rgb(255, 213, 213);
+  padding: 5px;
+  margin: 0px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  background-color: white;*/
+  flex: 1;
+  border-radius: 32px;
+  border: 2px solid rgb(11, 10, 10);
+  padding: 0.5px;
+  background-color: white;
+  height: 545px;
+  margin: 20px 25px 10px 30px;
+}
+.work-head img {
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 29px;
+  border-top-right-radius: 29px;
+  background-color: #8deaff;
+}
+
+.projectlist .work #newimage {
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 30px;
+  margin-bottom: 4px;
+}
+.projectlist .work h2 {
+  color: #df3838;
+  margin-top: 5px;
+}
+
+.work .boxmodel1 {
+  padding: 9px;
+  margin-bottom: 8px;
+}
+.work .boxmodel1 p {
+  margin: 8px 12px;
+  text-align: justify;
+  font-size: 0.99rem;
+}
+.work .boxmodel1 p i {
+  padding-right: 10px;
+  color: #df3838;
+}
+.projectlist .work a:hover {
+  color: white;
+}
+.work .url {
+  margin-top: 3px;
+  width: 35%;
+}
+
+.tabcontents .projectlist .work:hover {
+  box-shadow: 0px 5px 14px 2px #ccc;
+  border: 1.5px solid transparent;
+  border: 2px solid green;
+}
+
+/*Contact details*/
+
+#contact {
+  height: 750px;
+  width: 100%;
+  background-color: #059ffe;
+}
+
+.contact-row {
+  margin: 4% 15%;
+  justify-content: center;
+  background-color: white;
+  display: flex;
+  width: auto;
+}
+.contact-col-left {
+  display: inline-block;
+  padding: 70px 0px 10px 40px;
+  font-size: 1.25rem;
+  width: 40%;
+}
+.contact-col-right {
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 55px 20px 20px 48px;
+  width: 60%;
+  text-align: center;
+
+  /* display: inline-block;
+    font-size: 1.25rem;
+    padding: 55px 4px 20px 47px;
+    width: 80%;
+    text-align: center;*/
+}
+
+.contact-col-left p {
+  padding: 30px 0 0 0px;
+}
+
+.contact-col-left .icons i {
+  margin: 10px;
+  padding: 5px;
+  font-size: 2rem;
+  transition: all 0.3s linear;
+}
+.contact-col-left .icons i:hover {
+  color: #ff60d7;
+  transform: scale(1.3);
+}
+
+.btn.btn2 {
+  display: block;
+  width: 40%;
+  height: 49px;
+  padding: 2.5% 8%;
+  margin: 30px 20%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #e24747;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+.btn.btn2:hover,
+.contact-col-right form .sub:hover {
+  color: black;
+  box-shadow: 0px 0 5px 3px #ccc;
+  background-color: #6782fa;
+  border-top-right-radius: 19px;
+  border-bottom-left-radius: 19px;
+}
+
+form input,
+textarea {
+  padding: 9px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.15rem;
+  outline: none;
+  border: 2px solid black;
+}
+.contact-col-right form .sub {
+  display: block;
+  width: 26%;
+  height: 49px;
+  padding: 0% 5%;
+  margin: 30px 20%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #e24747;
+  border-radius: 12px;
+cursor: pointer;
+}
+
+.flex {
+  /*justify-content: space-around;*/
+  justify-content: space-evenly;
+  background-color: rgb(52 63 86);
+  display: flex;
+  color: whitesmoke;
+  height: 50px;
+  padding-top: 13px;
+}
+.footer-first:hover {
+  color: rgb(93, 197, 197);
+}
+
+.flex div {
+  text-align: center;
+  width: 35%;
+  font-size: 1.2rem;
+}
+.flex div p i {
+  color: red;
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 10%;
+  top: 30px;
+  font-size: 1.25rem;
+  background: white;
+}
+
+#msg{
+  display: block;
+  color: red;
+}
+@media only screen and (max-width: 1253px) and (min-width: 971px) {
+  #contact .container {
+    padding: 0px;
+  }
+  #contact .contact-row {
+    margin: 4% 8%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  nav {
+    flex-flow: column;
+  }
+  .right {
+    margin: 12px 0px 0px 22px;
+  }
+  .right ul li {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1470px) {
+  .skill-box1 .skill-title {
+    width: auto;
+  }
+  #about {
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #experience{
+    height: fit-content;
+  }
+  .row{
+    flex-direction: column;
+    margin: 20px 0px;
+    padding: 20px;
+  }
+  .col{
+    margin:  4% 3%;
+    padding:5% 3%;
+    width: auto;
+  }
+  .col img {
+    margin: 2px ;
+ }
+}
+
+@media only screen and (max-width: 999px) and (min-width:501px)  {
+  #experience{
+    height: fit-content;
+  }
+  .row{
+    flex-direction: column;
+    margin: 10px 0px;
+    padding: 72px;
+  }
+  .col .url{
+    width: auto;
+  }
+  .col{
+    margin: 2% 5% 8% 5%;
+    padding:5%  5%;
+    width: 92%;
+  }
+  .col img {
+    margin: 2px ;
+ }
+  }
+@media only screen and (max-width: 1169px) and (min-width:1000px){
+  #experience{
+    height: fit-content;
+    width: 100%;
+  }
+  .row {
+    
+    padding: 2px ;
+    margin: 20px  0px;
+   
+  }
+  
+  .col {
+    padding: 35px 5px 5px 5px;
+    margin: 12px;
+  }
+  .col img {
+   margin: 2px ;
+}
+ 
+.flex{
+  padding-top: 8px;
+}
+  }
+
+
+@media only screen and (max-width: 1077px) {
+  .tabtitles {
+    margin: 20px 15%;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 971px) {
+  #project {
+    height: fit-content;
+  }
+  .col img {
+    margin: 0px;
+    padding: 0px;
+  }
+  .url {
+    margin-top: 25px;
+    width: 56%;
+  }
+
+  .projectlist .work a {
+    margin: 0px;
+    padding: 4px;
+  }
+  .work .boxmodel1 p {
+    margin: 6px;
+    font-size: 0.85rem;
+  }
+  /*.work .boxmodel1 {
+    padding: 1px;
+    margin-bottom: 0px;
+  }*/
+  .projectlist .work {
+    margin: 10px 10px 10px 0px;
+    height: 530px;
+  }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 701px) {
+  .projectlist {
+    flex-direction: column;
+    margin: 20px 51px;
+    padding: 72px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .projectlist {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+}
+@media only screen and (max-width: 970px) {
+  #header,
+  #about,
+  #middle,
+  #experience,
+  #project,
+  #contact {
+    height: fit-content;
+  }
+
+  .container {
+    padding: 1px;
+  }
+
+  .work .url {
+    width: auto;
+  }
+  .url {
+    width: auto;
+    margin-top: 35px;
+    margin-bottom: 8px;
+  }
+  .url a {
+    font-size: 0.99rem;
+    padding: 0px;
+    height: fit-content;
+  }
+  .work .work-head img {
+    width: 100%;
+  }
+
+  .class {
+    margin: 0px;
+  }
+
+  .header-text {
+    font-size: 30px;
+    margin-bottom: 250px;
+    margin-top: 45px;
+  }
+  .right ul li a {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .tabtitles {
+    display: block;
+    margin: 20px 33%;
+  }
+  #contact .contact-row {
+    height: fit-content;
+    display: block;
+    margin: 4%;
+  }
+  .contact-col-left {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .contact-col-right {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    margin: 5px;
+  }
+  .contact-col-left p {
+    margin: 5px;
+    text-align: center;
+  }
+
+  .btn.btn2 {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 1%;
+    margin: 30px 33%;
+  }
+
+  form input,
+  textarea {
+    padding: 25px;
+    font-size: 1rem;
+    margin: 2px;
+  }
+  .contact-col-right form .sub {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin: 15px 0 0 100px;
+    padding: 5px;
+  }
+
+  .h-nav-res {
+    height: 352px;
+  }
+  .v-nav-res {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+.flex{
+  padding-top: 9px;
+}
+  .flex div {
+    text-align: center;
+    width: auto;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .contact-col-right form .sub {
+    margin: auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width:284px) {
+  .tabtitles .tablinks{
+    padding: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) and (min-width:300px){
+  .tabtitles {
+    margin: 22px 22%;
+  }
+}
+@media only screen and (max-width: 299px) {
+  .tabtitles {
+    margin: 22px 10%;
+  }
+}
